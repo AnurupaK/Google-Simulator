@@ -273,6 +273,7 @@ https://github.com/user-attachments/assets/8ca49854-f2d7-43e4-808d-3d4d7900bcd5
 3. **📄 Aether Seek with PDF Analysis**
 
 
+![Uploading Screenshot (67).png…]()
 
 https://github.com/user-attachments/assets/fa9733a2-59a4-4bb4-9d42-24535aa15074
 
