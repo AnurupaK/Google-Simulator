@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rag-app:latest
+    container_name: rag-app-container
+    ports:
+      - "5000:5000"
+    depends_on:
+      - ollama-service
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - .:/app
+    networks:
+      - app-network
+
+  ollama-service:
+    image: ollama/ollama:latest
+    container_name: ollama-service
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    networks:
+      - app-network
+
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  ollama:
+    driver: local
