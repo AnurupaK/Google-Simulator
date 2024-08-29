@@ -1,0 +1,1 @@
+Do not put any content during application run. This text file is just to indicate that uploads folder is dynamic and stores pdf while user uploads pdf for analysis.
