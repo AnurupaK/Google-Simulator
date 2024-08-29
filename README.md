@@ -30,6 +30,123 @@ Welcome to **Aether Seek**, a cutting-edge Google Simulator with advanced functi
 ### 🌍 Deployment with ngrok
 - Deployed using ngrok, making the application accessible from anywhere.
 
+
+## 🏗️ Project Setup with Docker
+
+Aether Seek is containerized using Docker for efficient deployment. Here’s a breakdown of the Docker setup:
+
+### 📄 Dockerfile Explained
+
+```Dockerfile
+FROM python:3.9-slim
+```
+- **Base Image**: Uses Python 3.9-slim for a lightweight environment.
+
+```Dockerfile
+# Set the working directory
+WORKDIR /app
+```
+- **Working Directory**: Sets `/app` as the working directory in the container.
+
+```Dockerfile
+# Copy requirements and install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt --verbose
+```
+- **Install Dependencies**: Copies `requirements.txt` and installs the Python packages listed.
+
+```Dockerfile
+# Copy application code
+COPY Backend /app/Backend
+COPY Frontend /app/Frontend
+COPY AI_Service /app/AI_Service
+```
+- **Copy Code**: Transfers the code from your local machine to the container.
+
+```Dockerfile
+# Create upload directory
+RUN mkdir -p /app/uploads
+```
+- **Uploads Directory**: Creates a directory for storing uploaded files.
+
+```Dockerfile
+# Copy environment variables
+COPY .env /app/.env
+```
+- **Environment Variables**: Copies environment variables into the container.
+
+```Dockerfile
+# Expose port
+EXPOSE 5000
+```
+- **Expose Port**: Makes port 5000 available for communication with the container.
+
+```Dockerfile
+# Set the working directory for the Flask app
+WORKDIR /app/Backend
+
+# Command to run the Flask app
+CMD ["python", "app.py"]
+```
+- **Start Flask App**: Sets the working directory and specifies the command to run the Flask application.
+
+### 📜 docker-compose.yml Explained
+
+```yaml
+version: '3.8'
+```
+- **Version**: Specifies the Docker Compose file format version.
+
+```yaml
+services:
+  flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rag-app:latest
+    container_name: rag-app-container
+    ports:
+      - "5000:5000"
+    depends_on:
+      - ollama-service
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - .:/app
+    networks:
+      - app-network
+```
+- **Flask Service**: Defines the Flask application service, builds it from the `Dockerfile`, sets up environment variables, exposes port 5000, and depends on `ollama-service`.
+
+```yaml
+  ollama-service:
+    image: ollama/ollama:latest
+    container_name: ollama-service
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    networks:
+      - app-network
+```
+- **Ollama Service**: Defines the Ollama service with its own port and volume for persistent data, and connects to the same network as the Flask service.
+
+```yaml
+networks:
+  app-network:
+    driver: bridge
+```
+- **Network**: Sets up a bridge network for communication between services.
+
+```yaml
+volumes:
+  ollama:
+    driver: local
+```
+- **Volumes**: Defines a local volume for storing Ollama data.
+
+
 ## 🔧 Installation and Setup
 
 ### 1. 🌐 Clone the Repository
