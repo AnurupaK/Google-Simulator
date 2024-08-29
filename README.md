@@ -51,8 +51,8 @@ pip install -r requirements.txt
 ```
 
 ### 4. 🔑 Obtain API Keys
-- **Groq API Key:** Get your API key from [Groq Console](https://console.groq.com/keys).
-- **Google AI Studio Key:** Generate your API key from [Google AI Studio](https://console.groq.com/keys).
+- **Groq API Key:** Get your API key from [Groq Console](https://console.groq.com/playground).
+- **Google AI Studio Key:** Generate your API key from [Google AI Studio](https://ai.google.dev/aistudio?authuser=3).
 
 ### 5. 🐳 Dockerize the Application
 
