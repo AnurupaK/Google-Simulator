@@ -24,6 +24,12 @@ Welcome to **Aether Seek**, a cutting-edge Google Simulator with advanced functi
 ### 📂 Dynamic File Handling
 - **Uploads:** PDF files are stored in the `uploads/` folder for processing and analysis.
 
+### LangChain 🔗 
+- It is used for integrating various AI models and frameworks, enabling seamless interactions between different services in the Aether Seek application. It orchestrates the communication between models like Llama 3, Whisper, Gemini, and Mixtral to provide a cohesive user experience.
+
+### Ollama 🌐 
+- It provides robust embedding capabilities, utilizing the Llama 3 model to enhance the application's performance in handling text and queries. It allows Aether Seek to effectively create and manage embeddings, improving search and response accuracy.
+
 ### 🐋 Fully Dockerized
 - The entire application, including all AI services and the backend, is containerized using Docker. This ensures consistency, scalability, and easy deployment.
 
