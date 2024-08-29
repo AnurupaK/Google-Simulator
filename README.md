@@ -265,6 +265,10 @@ https://github.com/user-attachments/assets/deed3a47-ad87-4231-af07-fa810334c7ab
 2. **🎙️ Aether Seek with Voice Queries**
 
 
+
+https://github.com/user-attachments/assets/8ca49854-f2d7-43e4-808d-3d4d7900bcd5
+
+
   
 3. **📄 Aether Seek with PDF Analysis**
 
