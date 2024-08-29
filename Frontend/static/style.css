@@ -1,0 +1,167 @@
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+/*Header part*/
+header {
+    min-height: 50px;
+    border: 1px solid black;
+    background-color: rgb(38, 35, 201);
+    margin-bottom: 13px;
+    font-size: 1.3rem;
+    font-family: "Lobster", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    
+}
+
+.title{
+    background: linear-gradient(to right, red, yellow); /* Your gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+
+.topics {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/*Main*/
+main {
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
+.searchbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbar {
+    width: 600px;
+    min-height: 50px;
+    border: 1px solid rgb(222, 216, 216);
+    border-radius: 21px;
+    transform: translateY(-10px);
+    box-sizing: border-box;
+    padding: 13px;
+    box-shadow: 1px 1px 2px 2px rgb(172, 171, 171)
+}
+
+.facility{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.voiceBtn{
+    border-radius: 21px;
+}
+.facility:hover{
+    transform: scale(1.3);
+}
+#sendBtn{
+    background-color: rgb(58, 32, 225);
+    border-radius: 21px;
+    color: white;
+    height: 30px;
+}
+
+.resultbox {
+    width: 700px;
+    height: 480px;
+    border: 1px solid rgb(228, 222, 222);
+    border-radius: 11px;
+    padding: 21px;
+    box-sizing: border-box;
+    overflow: scroll;
+    text-align: justify;
+    background-color: white;
+    box-shadow: 1px 1px 7px 7px inset rgb(230, 229, 229);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 21px; 
+}
+
+.resultbox::-webkit-scrollbar{
+    display: none;
+}
+
+.resultbox{
+    scrollbar-width: none;
+}
+
+
+/*Footer part*/
+.footer{
+    height: 50px;
+    width: 98.3%;
+    background-color: rgb(38, 35, 201);
+    display: flex;
+    align-items: center;
+    padding: 0px 13px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    font-family: "Lobster", sans-serif;
+}
+
+.copyright{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 800;
+}
+
+.social_logo{
+    min-width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px;
+}
+
+.social{
+    height: 100%;
+    padding: 7px;
+    margin: 0px 7px;
+}
+
+.social i{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.social a{
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.social a:hover{
+    color: rgb(221, 240, 12);
+}

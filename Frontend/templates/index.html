@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.jpg') }}" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Google simulator</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="title">Aether Seek</div>
+            <div class="topics">
+                <div class="home">Home</div>
+                <div class="About">About Us</div>
+                <div class="service">Services</div>
+                <div class="blogs">Blogs</div>
+                <div class="Careers">Careers</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="searchbox">
+            <label for="searchbar" style="font-size: 2.3rem;">🔍</label>
+            <input type="text" class="searchbar" placeholder="Search anything with AI">
+            <div class="voiceBtn facility">🎙️</div>
+
+            <div id="pdfBtn" class="pdf facility">📄</div>
+            <input type="file" id="pdfInput" style="display: none;" accept="application/pdf">
+
+            <div id="imageBtn" class="image facility">🖼️</div>
+            <input type="file" id="imageInput" style="display: none;" accept="image/*">
+
+            <div id="urlBtn" class="url facility">🔗</div>
+            <input type="text" id="urlInput" placeholder="Enter URL" style="display: none;">
+
+            <div class="clearBtn facility">❌</div>
+            
+            <button id="sendBtn" style="display: none;">Send to AI</button>
+        </div>
+
+        <div class="resultbox">
+        
+        </div>
+    </main>
+    
+
+    <div class="footer">
+        <div class="copyright">&copy; Anurupa Karmakar 2024</div>
+        <div class="social_logo">
+            <div class="social1 social"><a target="_blank" href="https://github.com/AnurupaK"
+                    aria-label="GitHub profile">
+                    <i class="fab fa-github"></i> Github
+                </a></div>
+            <div class="social2 social"><a target="_blank"
+                    href="https://www.linkedin.com/in/anurupa-karmakar-a1b82a174/" aria-label="LinkedIn profile">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a></div>
+            <div class="social3 social"><a target="_blank" href="https://x.com/Anurupa_K" aria-label="Twitter profile">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
