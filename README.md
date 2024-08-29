@@ -244,3 +244,48 @@ Contributions are welcome! Feel free to fork this repository, create a new branc
 
 This project is licensed under the MIT License.
 
+## 🎥Demo 
+Absolutely! Here are five demo use cases for Aether Seek:
+
+---
+
+## 📽️ Aether Seek Demo Use Cases
+
+
+
+
+1. **🔍 Aether Seek with Text Queries**
+
+
+
+https://github.com/user-attachments/assets/deed3a47-ad87-4231-af07-fa810334c7ab
+
+
+
+2. **🎙️ Aether Seek with Voice Queries**
+
+
+  
+3. **📄 Aether Seek with PDF Analysis**
+
+
+
+https://github.com/user-attachments/assets/fa9733a2-59a4-4bb4-9d42-24535aa15074
+
+
+   
+
+4. **🖼️ Aether Seek with Image Analysis**
+
+  
+
+https://github.com/user-attachments/assets/2bfba0d1-92ad-4cb9-8c35-a1f398cd7527
+5. **🌐 Aether Seek with URL Analysis**
+
+
+
+https://github.com/user-attachments/assets/bea50774-0e34-432c-9af5-469b2b7d2941
+
+
+
+   
