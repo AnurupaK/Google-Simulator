@@ -16,7 +16,7 @@ from langchain_core.prompts import MessagesPlaceholder
 from langchain.chains.history_aware_retriever import create_history_aware_retriever
 
 load_dotenv()
-# ollama_host = os.getenv("OLLAMA_HOST", "http://0.0.0.0:11434")
+
 groq_api_key = os.getenv("GROQ_API_KEY")
 if not groq_api_key:
     raise ValueError("API key for Groq is not set in the environment variables.")
@@ -69,9 +69,9 @@ def get_pdfDocument(pdf):
     return splitDocs
 
 def create_db(docs):
-    # embedding = OllamaEmbeddings(model="llama3.1", base_url="http://localhost:11434")
+    # embedding = OllamaEmbeddings(model="llama3.1", base_url="http://localhost:11434")   ##use this if you are ot using docker
     embedding = OllamaEmbeddings(model="llama3", base_url="http://ollama-service:11434")
-    # embedding = OllamaEmbeddings(model="llama3.1", base_url=ollama_host)
+
     
     vectorStore = FAISS.from_documents(docs,embedding)
     return vectorStore
