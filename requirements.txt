@@ -1,0 +1,11 @@
+faiss-cpu
+flask
+groq
+python-dotenv
+google-generativeai
+langchain_core
+langchain_community
+pypdf
+langchain-groq
+PyPDF2
+bs4
