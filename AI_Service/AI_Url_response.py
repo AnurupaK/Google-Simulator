@@ -7,10 +7,9 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains import create_retrieval_chain
-from langchain_community.vectorstores import FAISS, Chroma
+from langchain_community.vectorstores import FAISS
 
 load_dotenv()
-# ollama_host = os.getenv("OLLAMA_HOST", "http://0.0.0.0:11434")
 groq_api_key = os.getenv("GROQ_API_KEY")
 llm_url = ChatGroq(groq_api_key=groq_api_key, model_name="mixtral-8x7b-32768")
 
@@ -26,7 +25,7 @@ Questions:{input}
 
 def process_url(url, prompt):
     # Load embeddings and documents once
-    # embeddings = OllamaEmbeddings(model="llama3.1", base_url="http://localhost:11434")
+    # embeddings = OllamaEmbeddings(model="llama3.1", base_url="http://localhost:11434")  ##Use this if you are not using docker
     embedding = OllamaEmbeddings(model="llama3", base_url="http://ollama-service:11434")
     
     loader = WebBaseLoader(url)
