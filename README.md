@@ -1,7 +1,7 @@
 
 # 🌌 Aether Seek: The Next-Gen Google Simulator
 
-Welcome to **Aether Seek**, a cutting-edge Google Simulator with advanced functionalities that transcend the capabilities of a typical search engine. Imagine Google, but more interactive, versatile, and powerful. From handling text and voice queries to analyzing PDFs, images, and URLs, Aether Seek is your all-in-one AI-powered assistant.
+Welcome to **Aether Seek** [Article on Medium](https://medium.com/@anurupakarmakar.dgp18/deploying-a-dockerized-flask-application-with-ollama-service-on-ngrok-9dde8b86dc5b), a cutting-edge Google Simulator with advanced functionalities that transcend the capabilities of a typical search engine. Imagine Google, but more interactive, versatile, and powerful. From handling text and voice queries to analyzing PDFs, images, and URLs, Aether Seek is your all-in-one AI-powered assistant.
 
 ## 🚀 Features
 
