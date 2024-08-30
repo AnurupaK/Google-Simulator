@@ -4,8 +4,8 @@ import sys
 from werkzeug.utils import secure_filename
 app = Flask(__name__, template_folder="../Frontend/templates", static_folder="../Frontend/static")
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'AI_Service')))
-from Llama_response import get_whisper, get_llm_response, get_pdfDocument,create_db,create_chain,get_llm_response_pdf
-from AI_Url_response import process_url
+from ai_response import get_whisper, get_llm_response, get_pdfDocument,create_db,create_chain,get_llm_response_pdf
+from AI_urlResponse import process_url
 from gemini_response import process_image_with_gemini
 
 
@@ -126,5 +126,6 @@ def generate_response_image():
     
 if   __name__=="__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
+    
     
     
