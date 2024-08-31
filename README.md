@@ -250,7 +250,6 @@ Contributions are welcome! Feel free to fork this repository, create a new branc
 
 This project is licensed under the MIT License.
 
-## 🎥Demo 
 
 ## 📽️ Aether Seek Demo Use Cases
 
