@@ -251,9 +251,6 @@ Contributions are welcome! Feel free to fork this repository, create a new branc
 This project is licensed under the MIT License.
 
 ## 🎥Demo 
-Absolutely! Here are five demo use cases for Aether Seek:
-
----
 
 ## 📽️ Aether Seek Demo Use Cases
 
